@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const Header = () => {
      // JSX
@@ -8,6 +8,13 @@ const Header = () => {
         function sum(a, b) {
             return a + b;
         }
+
+        useEffect(() => {
+            console.log(sum(10, 20));
+            console.log(c, 'c');
+            console.log('Hello World');
+        }, [])
+    
   return (
     <div>
       
